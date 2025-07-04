@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #000000;
+  --background: #ffffff;
+  --accent: #0000ff;
+  --border: #000000;
+}
+
+body {
+  font-family: Arial, Helvetica, system-ui, sans-serif;
+  color: var(--foreground);
+  background: var(--background);
+  -webkit-font-smoothing: none;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
+input,
+textarea {
+  border: 1px solid var(--border);
+  padding: 0.5rem;
+  width: 100%;
+  background: var(--background);
+}
+
+button {
+  border: 1px solid var(--border);
+  padding: 0.5rem 1rem;
+  background: var(--background);
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f0f0f0;
+}
+
+a {
+  color: var(--foreground);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.accent {
+  color: var(--accent);
+}
